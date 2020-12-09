@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "resourceaz" {
   name     = var.name
   location = var.location
-  tags     = merge({ "ResourceName" = format("%s", var.resource_group_name) }, var.tags, )
+  tags     = merge(var.tags)
 }
