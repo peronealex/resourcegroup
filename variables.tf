@@ -13,3 +13,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "resource_group_name" {
+  default = "test test"
+  description = "default value"  
+}
